@@ -14,7 +14,7 @@ Put your files in:
  - ./src/include -> include files
  - ./src/bin     -> final programs, ie. cpp files with a defined main() in.
  - ./src/lib     -> generic library using by the programs.
-
+ - ./src/tests   -> Put your test files here. File pattern for tests is: test_[testname].cpp
 
 
 License
