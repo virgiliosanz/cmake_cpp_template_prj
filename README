@@ -1,0 +1,26 @@
+What is it?
+-----------
+This a project template to develop c++ projects using boost and stardard c++11.
+There is support to testing using boost.test.
+Build and test system depends on cmake!
+
+Documentation
+-------------
+Build system is ready for using standard "configure && make && sudo make install".
+There is also support for "make test" using cmake testing system
+
+Put your files in:
+
+ - ./src/include -> include files
+ - ./src/bin     -> final programs, ie. cpp files with a defined main() in.
+ - ./src/lib     -> generic library using by the programs.
+
+
+
+License
+-------
+Please see LICENSE file
+
+Contacts
+--------
+Author: virgilio sanz <virgilio.sanz@gmail.com>

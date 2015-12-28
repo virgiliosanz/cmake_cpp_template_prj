@@ -1,0 +1,8 @@
+file(GLOB EXES "*.cpp")
+foreach(EXE_FILE ${EXES})
+    get_filename_component(EXE_NAME ${EXE_FILE} NAME_WE)
+    add_executable(${EXE_NAME} ${EXE_FILE})
+    set_property(TARGET ${EXE_NAME} PROPERTY CXX_STANDARD 11)
+    set_property(TARGET ${EXE_NAME} PROPERTY CXX_STANDARD_REQUIRED ON)
+    target_link_libraries(${EXE_NAME} ${PROJECT_NAME} ${ADDITIONAL_LIBS})
+endforeach(EXE_FILE ${EXES})

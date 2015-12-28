@@ -1,0 +1,26 @@
+INSTALL
+=======
+
+Ubuntu / Linux
+--------------
+
+Install the following dependencies
+
+- tools:
+$ sudo apt-get install cmake build-essential
+
+- libs:
+$ sudo apt-get install libyajl-dev libxml2-dev
+
+OSX
+---
+$ brew install cmake libxml2 yajl
+
+Then exec: make and it would go, executables would go in build/src/bin
+
+You can execute tests:
+$ make test
+
+Windows
+-------
+
