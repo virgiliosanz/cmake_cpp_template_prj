@@ -9,6 +9,15 @@ set(PROJECT_VERSION_MINOR 1)
 set(PROJECT_VERSION_PATCH 0)
 set(PROJECT_VERSION_STRING "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
 
+set(CMAKE_BUILD_TYPE release)
+set(CMAKE_VERBOSE_MAKEFILE 0)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin/)
+#set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/misc/cmake/)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# Build Doxygen documentation
+option(BUILD_DOC "Build documentation" ON)
 
 ##########################################################################################
 ## Script starts
@@ -43,4 +52,5 @@ include(DoxygenTargets)
 
 # Source Dir
 add_subdirectory(src)
+add_subdirectory(doc)
 

@@ -7,7 +7,8 @@ Build and test system depends on cmake!
 Documentation
 -------------
 Build system is ready for using standard "configure && make && sudo make install".
-There is also support for "make test" using cmake testing system
+There is also support for "make test" using cmake testing system and "make docs"
+for Doxygen automatic documentation.
 
 Put your files in:
 
